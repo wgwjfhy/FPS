@@ -1,0 +1,32 @@
+/* pages/detail/detail.wxss */
+.viewclass{
+  background-color: #B4F5A2;
+  color: blue;
+  height: 100vh;
+}
+
+.rowImg{
+  margin: 0 auto;
+  text-align: center
+}
+.rowView{
+  display: flex;
+  margin: 15px 15px 15px;
+}
+.rowView input{
+  border:  2px solid #F5AA03;
+  border-radius: 40px;
+  margin-left: 10px;
+  margin-right: 5px;
+  padding-left: 10px;
+}
+#payBtn {
+   margin: 15px 15px 15px;
+   background-color: green;
+   color: white
+}
+#riseBtn {
+   margin: 15px 15px 15px;
+   background-color: white;
+   color: green
+}

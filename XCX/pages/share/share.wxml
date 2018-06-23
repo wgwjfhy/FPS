@@ -1,0 +1,32 @@
+<!--pages/share/share.wxml-->
+<view class="viewclass">
+  <view>
+      <view class="rowImg">
+        <image style="background-color: #eeeeee;" src="{{src}}" bindtap="selectImg"></image>
+      </view>
+
+      <view class="rowView">
+       开始时间:
+       <picker mode="multiSelector" value="{{picker1.dateTime}}"  bindchange="changeDateTime1" range="{{picker1.dateTimeArray}}">
+       <input id='sy_begin' type="date" value = "{{sy_begin}}" disabled="true"/> 
+        </picker>
+      </view>
+      <view class="rowView">
+      结束时间:
+      <picker mode="multiSelector" value="{{picker2.dateTime}}"  bindchange="changeDateTime2" range="{{picker2.dateTimeArray}}">
+        <input id='sy_end' type="date" value = "{{sy_end}}"  disabled="true"/>
+        </picker>
+      </view>
+      <view class="rowView">
+      发布时间:
+      <picker mode="multiSelector" value="{{picker3.dateTime}}"  bindchange="changeDateTime3" range="{{picker3.dateTimeArray}}">
+        <input id="fbsj" type="text" value = "{{sy_fb}}" disabled="true"/>
+        </picker>
+      </view>
+       <view class="rowView">
+        费用金额:<input id="m_t" name="m_t" bindinput="setInptValue" bindblur='setInptValue' value="{{m_t}}" type="number"/>元
+      </view>
+      
+      <button id="shareBtn" bindtap="share">发布</button>
+  </view>
+</view>

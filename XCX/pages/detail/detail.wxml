@@ -1,0 +1,25 @@
+<!--pages/detail/detail.wxml-->
+<view class="viewclass">
+  <view>
+      <view class="rowImg">
+        <image style="background-color: #eeeeee;" src="{{img_src}}"></image>
+      </view>
+      
+      <view class="rowView">
+       开始时间:
+       <input id='sy_begin' type="date"  value = "{{sy_begin}}"/> 
+      </view>
+      <view class="rowView">
+        结束时间:<input id='sy_end' type="date"  value = "{{sy_end}}"/>
+      </view>
+      <view class="rowView">
+        发布时间:<input id="fbsj" type="text" value = "{{fbsjsrc}}"/>
+      </view>
+       <view class="rowView">
+        费用金额:<input id="m_t" type="number" value = "{{m_t}}"/>元
+      </view>      
+      
+      <button id="payBtn" bindtap="pay">支付</button>
+      <button id="riseBtn" bindtap="rise">举报</button>
+  </view>
+</view>

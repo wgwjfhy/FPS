@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/ad/ad",
+    "pages/permissions/main",
+    "pages/index/index",
+    "pages/share/share",
+    "pages/detail/detail",
+    "pages/permissions/getUserInfo"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#B4F5A2",
+    "navigationBarTitleText": "Gaowei",
+    "navigationBarTextStyle": "black"
+  }
+}
